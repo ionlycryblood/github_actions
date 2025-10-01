@@ -7,8 +7,9 @@ jobs:
     - name: Get repo code
       uses: actions/checkout@v4
     - name: install requirements
-      uses: python -m pip install --upgrade pip
-            pip install -r requirements.txt
+      run: | 
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
     - name: run test
-      uses: pytest
+      run: pytest
 
