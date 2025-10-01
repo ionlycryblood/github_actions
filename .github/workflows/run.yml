@@ -8,8 +8,7 @@ jobs:
       uses: actions/checkout@v4
 
     - name: install browsers
-      run: sudo apt-get update
-          sudo apt-get install -y \
+      run: sudo apt-get update && sudo apt-get install -y \
           libgtk-4-1 \
           libgraphene-1.0-0 \
           libwoff2dec0 \
